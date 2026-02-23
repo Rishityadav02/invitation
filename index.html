@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silver Jubilee — Celebrating 25 Years of Togetherness</title>
+    <meta name="description"
+        content="You are warmly invited to celebrate 25 glorious years of love, togetherness, and family. Join us for the Silver Jubilee celebration.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- ============ PARTICLE CANVAS (always behind everything) ============ -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- ============ PRELOADER ============ -->
+    <div id="preloader">
+        <div class="preloader-bg"></div>
+        <div class="preloader-content">
+            <div class="emblem">
+                <div class="emblem-ring"></div>
+                <div class="emblem-ring emblem-ring--inner"></div>
+                <div class="emblem-number">25</div>
+            </div>
+            <h1 class="preloader-title">Celebrating 25 Years<br><span>of Togetherness</span></h1>
+            <div class="preloader-line"></div>
+            <button id="enter-btn" class="enter-btn">
+                <span class="enter-btn-text">Enter the Celebration</span>
+                <span class="enter-btn-glow"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- ============ DOOR ANIMATION ============ -->
+    <div id="doors-container">
+        <div class="door-light-burst"></div>
+        <div class="door-panel door-left">
+            <div class="door-ornament"></div>
+        </div>
+        <div class="door-panel door-right">
+            <div class="door-ornament"></div>
+        </div>
+        <div class="door-particles"></div>
+    </div>
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <main id="main-content">
+
+        <!-- Hero after doors -->
+        <section class="hero-section" id="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="hero-subtitle">A Journey of Love</p>
+                <h2 class="hero-title">25 Years of<br>Beautiful Togetherness</h2>
+                <div class="scroll-indicator">
+                    <div class="scroll-mouse">
+                        <div class="scroll-dot"></div>
+                    </div>
+                    <p>Scroll to explore our story</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scene 1: Wedding -->
+        <section class="scene" id="scene-1">
+            <div class="scene-bg" style="background-image: url('assets/wedding_scene.png')"></div>
+            <div class="scene-overlay"></div>
+            <div class="scene-content">
+                <div class="scene-badge">Chapter One</div>
+                <h2 class="scene-title">Where It All Began</h2>
+                <p class="scene-text">Two hearts united in love, bound by sacred vows under the holy mandap. With the
+                    warmth of family blessings, the exchange of garlands sealed a promise to walk together through every
+                    season of life.</p>
+                <div class="scene-year">2001</div>
+            </div>
+        </section>
+
+        <!-- Scene 2: First Child -->
+        <section class="scene" id="scene-2">
+            <div class="scene-bg" style="background-image: url('assets/family_baby.png')"></div>
+            <div class="scene-overlay scene-overlay--warm"></div>
+            <div class="scene-content">
+                <div class="scene-badge">Chapter Two</div>
+                <h2 class="scene-title">A New Beginning</h2>
+                <p class="scene-text">The arrival of their first child filled the home with indescribable joy. Tiny
+                    hands, sleepless nights, and endless love — a family was truly born. Every cry, every smile, every
+                    milestone became a cherished memory.</p>
+                <div class="scene-year">2002</div>
+            </div>
+        </section>
+
+        <!-- Scene 3: Second Child -->
+        <section class="scene" id="scene-3">
+            <div class="scene-bg" style="background-image: url('assets/family_baby2.png')"></div>
+            <div class="scene-overlay scene-overlay--festive"></div>
+            <div class="scene-content">
+                <div class="scene-badge">Chapter Three</div>
+                <h2 class="scene-title">Growing With Love</h2>
+                <p class="scene-text">With the arrival of their second child, the family became complete. Laughter
+                    doubled, the house grew louder, and love multiplied beyond measure. Two little souls became the
+                    heartbeat of this beautiful family.</p>
+                <div class="scene-year">2006</div>
+            </div>
+        </section>
+
+        <!-- Scene 4: Growing Together -->
+        <section class="scene" id="scene-4">
+            <div class="scene-bg" style="background-image: url('assets/family_growing.png')"></div>
+            <div class="scene-overlay scene-overlay--golden"></div>
+            <div class="scene-content">
+                <div class="scene-badge">Chapter Four</div>
+                <h2 class="scene-title">Together Through Every Season</h2>
+                <p class="scene-text">Through school years and teenage milestones, family dinners and festival
+                    celebrations, vacations and late-night conversations — they grew together, weathering every storm
+                    and celebrating every sunrise as one.</p>
+                <div class="scene-year">The Years Between</div>
+            </div>
+        </section>
+
+        <!-- Scene 5: Memories -->
+        <section class="scene" id="scene-5">
+            <div class="scene-bg" style="background-image: url('assets/family_portrait.png')"></div>
+            <div class="scene-overlay scene-overlay--memories"></div>
+            <div class="scene-content">
+                <div class="scene-badge">Chapter Five</div>
+                <h2 class="scene-title">Lovely Family Memories</h2>
+                <p class="scene-text">Walks in the park, family selfies, festival celebrations, warm hugs — countless
+                    moments woven into the beautiful tapestry of life. Every photograph tells a story, every memory
+                    shines like silver.</p>
+                <div class="scene-year">Forever</div>
+            </div>
+        </section>
+
+        <!-- ============ INVITATION SECTION ============ -->
+        <section id="invitation">
+            <div class="invitation-bg"></div>
+            <div class="invitation-particles"></div>
+            <div class="invitation-content">
+                <div class="invitation-ornament-top"></div>
+                <p class="invitation-pretext">With Love &amp; Gratitude</p>
+                <h2 class="invitation-headline">We Invite You to Celebrate</h2>
+                <h3 class="invitation-subheadline">25 Years of Togetherness</h3>
+                <span class="detail-label">"You & your family is invited"</span>
+                <div class="invitation-divider">
+                    <span class="divider-diamond">◆</span>
+                </div>
+                <div class="invitation-details">
+                    <div class="invitation-badge">Silver Jubilee Celebration</div>
+                    <div class="detail-row">
+                        <div class="detail-icon">📅</div>
+                        <div class="detail-info">
+                            <span class="detail-label">Date</span>
+                            <span class="detail-value">27th February, 2026</span>
+                        </div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-icon">🕠</div>
+                        <div class="detail-info">
+                            <span class="detail-label">Time</span>
+                            <span class="detail-value">6:00 PM Onwards</span>
+                        </div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-icon">📍</div>
+                        <div class="detail-info">
+                            <span class="detail-label">Venue</span>
+                            <span class="detail-value">Mahalaxmi Sweets & Restaurant, Jankipuram 60 feet road</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="invitation-ornament-bottom"></div>
+            </div>
+        </section>
+
+        <!-- ============ ENDING SECTION ============ -->
+        <section id="ending">
+            <canvas id="hearts-canvas"></canvas>
+            <div class="ending-content">
+                <div class="ending-portrait">
+                    <div class="portrait-frame">
+                        <img src="assets/family_photo.png" alt="Family Portrait" class="portrait-img">
+                    </div>
+                </div>
+                <h2 class="ending-title">Thank You for Being Part<br>of Our Journey</h2>
+                <p class="ending-subtitle">Your presence is the greatest gift</p>
+                <div class="ending-hearts">
+                    <span>♥</span><span>♥</span><span>♥</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============ MUSIC TOGGLE ============ -->
+    <button id="music-toggle" class="music-toggle" title="Toggle Music">
+        <svg class="music-icon music-on" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55C7.79 13 6 14.79 6 17s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
+        </svg>
+        <svg class="music-icon music-off" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M12 3v10.55c-.59-.34-1.27-.55-2-.55C7.79 13 6 14.79 6 17s1.79 4 4 4 4-1.79 4-4V7h4V3h-6zM2 2l20 20-1.41 1.41L.59 3.41z" />
+        </svg>
+    </button>
+
+    <!-- ============ VIGNETTE OVERLAY ============ -->
+    <div class="vignette-overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
